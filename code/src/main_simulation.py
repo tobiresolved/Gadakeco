@@ -2,14 +2,14 @@ import multiprocessing
 import random
 from multiprocessing import Pool
 import sys
-sys.path.append("C:\\Users\\tobia\\OneDrive\\Desktop\\Programmierprojekte\\Gadeko\\code")
+
 
 from lib import constants
 from neat.population import Population
 from world import NeuronalWorld
 
 number_of_processes = min(100, max(multiprocessing.cpu_count() - 2, 1))
-pop_name = "C:\\Users\\tobia\\OneDrive\\Desktop\\Programmierprojekte\\Gadeko\\code\\res\\networks\\2023-10-12 23_44_46.pop"
+pop_name = "code\\res\\networks\\2023-10-12 23_44_46.pop"
 
 
 def evaluate(world):
@@ -20,7 +20,7 @@ def evaluate(world):
 
 def main():
     try:
-        pop = Population.load_from_file("C:\\Users\\tobia\\OneDrive\\Projects\\Gadakeco-master\\code\\res\\networks\\2023-10-13 00_25_56.pop")
+        pop = Population.load_from_file("code\\res\\networks\\2023-10-13 00_25_56.pop")
     except:
         seed = random.randint(0, 1000)
         pop = Population(seed, 100)
