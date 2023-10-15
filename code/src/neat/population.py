@@ -1,6 +1,5 @@
 import sys
 import random
-sys.path.append("C:\\Users\\tobia\\OneDrive\\Desktop\\Programmierprojekte\\Gadeko\\code")
 import datetime
 import copy
 import pickle
